@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #ff9800 0%, #f44336 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .slide-container {
+    @apply min-h-screen w-full flex items-center justify-center px-4 py-12 md:py-20;
+  }
+  
+  .slide-content {
+    @apply max-w-3xl mx-auto text-center text-white relative;
+  }
+  
+  .slide-title {
+    @apply text-4xl md:text-6xl font-extrabold mb-6 leading-tight font-montserrat;
+  }
+  
+  .slide-subtitle {
+    @apply text-xl md:text-2xl font-semibold mb-4 text-orange-100 font-poppins;
+  }
+  
+  .slide-text {
+    @apply text-lg md:text-xl mb-6 leading-relaxed font-poppins;
+  }
+  
+  .slide-points {
+    @apply space-y-4 text-left max-w-2xl mx-auto;
+  }
+  
+  .slide-point {
+    @apply flex items-start space-x-3 text-lg font-poppins;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-br from-orange-500 via-orange-600 to-red-700;
+  }
+  
+  .card {
+    @apply bg-white/20 backdrop-blur-md rounded-3xl p-10 border border-white/20 shadow-2xl transition-transform duration-300 hover:scale-105;
+  }
+  
+  .slide-logo {
+    @apply absolute top-6 right-8 w-20 md:w-28 z-40 drop-shadow-lg;
+  }
+} 
