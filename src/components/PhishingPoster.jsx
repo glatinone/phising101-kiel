@@ -16,7 +16,7 @@ export default function PhishingPoster({ onStart }) {
               title="Kunjungi Hacktiv8"
             >
               <div className="bg-[#F3F4F6] rounded-full shadow-lg flex items-center justify-center w-40 h-40 md:w-52 md:h-52 mb-2 transition-transform hover:scale-105">
-                <img src={process.env.PUBLIC_URL + "/logo-hacktiv8.png"} alt="Hacktiv8" className="w-28 h-28 md:w-36 md:h-36 object-contain" />
+                <img src={import.meta.env.BASE_URL + "logo-hacktiv8.png"} alt="Hacktiv8" className="w-28 h-28 md:w-36 md:h-36 object-contain" />
               </div>
             </a>
             <span className="font-extrabold text-2xl md:text-3xl text-[#232323] mt-2 tracking-wide text-center">HACKTIV8</span>
@@ -67,7 +67,7 @@ export default function PhishingPoster({ onStart }) {
             {/* Speaker */}
             <div className="flex flex-col items-center">
               <img
-                src={process.env.PUBLIC_URL + "/IMG_8642.jpg"}
+                src={import.meta.env.BASE_URL + "IMG_8642.jpg"}
                 alt="Speaker"
                 className="w-[180px] h-[180px] rounded-xl shadow-md object-cover mb-2"
               />

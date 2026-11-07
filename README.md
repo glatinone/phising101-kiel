@@ -34,19 +34,19 @@ Indonesian-speaking audiences with no security background. It was built as the d
 
 ## Run locally
 
-Requires Node.js 18 or later.
+Requires Node.js 20.19+ or 22.12+.
 
 ```bash
 git clone https://github.com/glatinone/phising101-kiel.git
 cd phising101-kiel
 npm install
-npm start          # dev server on http://localhost:3000
+npm run dev        # dev server on http://localhost:3000
 npm run build      # production build in ./build
 ```
 
 ## Tech stack
 
-- React 18 (Create React App / react-scripts 5)
+- React 18, built with Vite
 - Tailwind CSS 3 with PostCSS and Autoprefixer
 - Framer Motion for animation, Lucide and React Icons for icons
 - Deployed on Vercel
